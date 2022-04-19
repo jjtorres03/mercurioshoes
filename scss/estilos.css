@@ -1,0 +1,56 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Cormorant Garamond', serif;
+  background-image: url("https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-repeat: no-repeat;
+}
+
+.logo {
+  border-radius: 20%;
+}
+
+img {
+  width: 180px;
+  height: 140px;
+}
+
+.carrusel {
+  height: 600px;
+  width: 80%;
+}
+
+.icono {
+  height: 30px;
+  width: 30px;
+}
+
+p {
+  margin: 10px;
+  font-size: 16px;
+  color: #fff;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  overflow: hidden;
+}
+
+div a .wsap {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  z-index: 2;
+}
+
+.wsap_sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50px;
+}
+/*# sourceMappingURL=estilos.css.map */
