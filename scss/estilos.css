@@ -1,12 +1,16 @@
+/*Variables*/
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
-body {
-  font-family: 'Cormorant Garamond', serif;
-  background-image: url("https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-  background-repeat: no-repeat;
+/*encabezado index*/
+.encabezado {
+  background-color: #d50606;
+}
+
+.encabezado .texto {
+  color: #fff033;
 }
 
 .logo {
@@ -28,17 +32,6 @@ img {
   width: 30px;
 }
 
-p {
-  margin: 10px;
-  font-size: 16px;
-  color: #fff;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-name: slidein;
-          animation-name: slidein;
-  overflow: hidden;
-}
-
 div a .wsap {
   position: fixed;
   bottom: 50px;
@@ -52,5 +45,45 @@ div a .wsap {
   position: -webkit-sticky;
   position: sticky;
   top: 50px;
+}
+
+/*texto de articulo MercurioShoes index*/
+.articulo {
+  background-color: #d50606;
+}
+
+.articulo .parrafo {
+  margin: 10px;
+  font-size: 16px;
+  color: #ffffff;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  overflow: hidden;
+}
+
+.articulo .texto {
+  color: #fff033;
+}
+
+/*footeer index*/
+.footer {
+  background-color: #d50606;
+  color: #ffffff;
+}
+
+.footer .texto {
+  color: #fff033;
+}
+
+.parrafo {
+  color: #ffffff;
+}
+
+body {
+  font-family: "Cormorant Garamond", serif;
+  background-image: url("https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-repeat: no-repeat;
 }
 /*# sourceMappingURL=estilos.css.map */
