@@ -2,35 +2,47 @@
   margin: 0;
   padding: 0;
 }
-/*encabezado index*/
+/*encabezado index y todas las paginas*/
 .encabezado {
   background-color: $color_encabezado;
     
+  /*h1 Titulo*/
   .texto{
-    color: $color_primario;
+    color: $color_texto;
+  
   }
 
 }
 
-
+/*Logo todas las paginas */
 .logo {
-    border-radius: 20%;
-  }
+  border: solid 2px #037ebb;
+   border-radius: 20%;
+   
+ }
+ 
+ /* imagenes de las card*/
   
   img {
     width: 180px;
     height: 140px;
+
   }
-  
+  /* imagenes de carrusel index*/
+
   .carrusel {
     height: 600px;
     width: 80%;
   }
   
+/*icono instagram footer de paginas*/
+
   .icono {
     height: 30px;
     width: 30px;
   }
+
+ /*boton whastsap*/
 
   div a .wsap {
     position: fixed;
@@ -60,21 +72,121 @@
         } 
 
         .texto{
-          color: $color_primario;
+          color: $color_texto;
         }
      }
 
-     /*footeer index*/
+     /*footeer todas las paginas*/
+
 .footer{
     background-color: $color_encabezado;
     color: $color_texto;
 
     .texto{
-      color: $color_primario;
+      color: $color_texto;
     }
 }     
   
+/* parrafos paginas*/
 
 .parrafo {
   color: $color_texto;
 }
+
+
+
+/*Pagina de Productos*/
+
+/*h3*/ 
+
+.text {
+  font-family: $tipo_defuente;
+  text-align: center;
+  background-color: $color_encabezado;
+  color: $color_texto;
+}
+
+
+/*Extend*/
+.button {
+  
+  background-color: #037ebb;
+  box-shadow: 2px 10px 10px #000;
+}
+
+
+.link {
+  text-decoration: none;
+  color: $color_texto;
+  border: none;
+  text-align: center;
+  font-size: 15px;
+  
+}
+
+
+@mixin border {
+  border: solid 2px #037ebb;
+  box-shadow: 2px 2px 5px #000;
+  
+  
+}
+
+.logo {
+  @include border ();
+   border-radius: 20%;
+   
+ }
+ 
+.card {
+  @include border();
+
+  .card-body{
+    background-color: $color_encabezado;
+
+    .card-text {
+       color: $color_texto;
+       font-size: 20px
+
+    }
+    /*Extend*/
+    .button {
+       @extend .button;
+
+       .link  {
+        @extend .link;
+        
+      }
+    }
+
+  }
+
+ 
+}
+
+.articulo {
+  background-color: $color_encabezado;
+  @include border ();
+
+     .parrafo {
+       font-family: $tipo_defuente;
+         margin: 10px;
+         font-size: 16px;
+         color: $color_texto;
+         animation-duration: 3s;
+         animation-name: slidein;
+         overflow: hidden;
+     } 
+
+     .texto{
+       color: $color_texto;
+     }
+  }
+
+  /*Pagina Como Comprar*/
+
+  .subtitulos {
+    color: $color_encabezado;
+    font-family: $tipo_defuente;
+    font-size: 40px;
+  }
