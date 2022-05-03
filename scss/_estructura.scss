@@ -4,6 +4,7 @@
 }
 /*encabezado index y todas las paginas*/
 .encabezado {
+  width: 100%;
   background-color: $color_encabezado;
     
   /*h1 Titulo*/
@@ -20,14 +21,18 @@
    border-radius: 20%;
    
  }
- 
- /* imagenes de las card*/
-  
-  img {
-    width: 180px;
-    height: 140px;
 
+ article {
+  width: 100%;
+}
+
+/* imagenes de las card*/
+  img {
+      width: 180px;
+      height: 140px;
   }
+ 
+
   /* imagenes de carrusel index*/
 
   .carrusel {
@@ -61,6 +66,7 @@
   /*texto de articulo MercurioShoes index*/
  .articulo {
      background-color: $color_encabezado;
+  
 
         .parrafo {
             margin: 10px;
@@ -79,6 +85,7 @@
      /*footeer todas las paginas*/
 
 .footer{
+     width: 100%;
     background-color: $color_encabezado;
     color: $color_texto;
 
@@ -126,7 +133,7 @@
 
 
 @mixin border {
-  border: solid 2px #037ebb;
+  border: solid 3px #037ebb;
   box-shadow: 2px 2px 5px #000;
   
   
@@ -140,6 +147,8 @@
  
 .card {
   @include border();
+
+  
 
   .card-body{
     background-color: $color_encabezado;
@@ -188,5 +197,23 @@
   .subtitulos {
     color: $color_encabezado;
     font-family: $tipo_defuente;
-    font-size: 40px;
+    font-size: 30px;
   }
+
+@media screen and (max-width: 760px) {
+ 
+  .footer{
+    width: 100%;
+    background-color: $color_encabezado;
+    color: $color_texto;
+    display: flex;
+    justify-content: start;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr,1fr;
+    font-size: 10px;
+    margin-right: 5px;
+  
+}  
+      
+}

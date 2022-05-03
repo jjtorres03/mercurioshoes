@@ -4,35 +4,46 @@
   padding: 0;
 }
 
-/*encabezado index*/
+/*encabezado index y todas las paginas*/
 .encabezado {
+  width: 100%;
   background-color: #d82e2e;
+  /*h1 Titulo*/
 }
 
 .encabezado .texto {
   color: #ffffff;
 }
 
+/*Logo todas las paginas */
 .logo {
   border: solid 2px #037ebb;
   border-radius: 20%;
 }
 
+article {
+  width: 100%;
+}
+
+/* imagenes de las card*/
 img {
   width: 180px;
   height: 140px;
 }
 
+/* imagenes de carrusel index*/
 .carrusel {
   height: 600px;
   width: 80%;
 }
 
+/*icono instagram footer de paginas*/
 .icono {
   height: 30px;
   width: 30px;
 }
 
+/*boton whastsap*/
 div a .wsap {
   position: fixed;
   bottom: 50px;
@@ -68,8 +79,9 @@ div a .wsap {
   color: #ffffff;
 }
 
-/*footeer index*/
+/*footeer todas las paginas*/
 .footer {
+  width: 100%;
   background-color: #d82e2e;
   color: #ffffff;
 }
@@ -78,6 +90,7 @@ div a .wsap {
   color: #ffffff;
 }
 
+/* parrafos paginas*/
 .parrafo {
   color: #ffffff;
 }
@@ -107,14 +120,14 @@ div a .wsap {
 }
 
 .logo {
-  border: solid 2px #037ebb;
+  border: solid 3px #037ebb;
   -webkit-box-shadow: 2px 2px 5px #000;
           box-shadow: 2px 2px 5px #000;
   border-radius: 20%;
 }
 
 .card {
-  border: solid 2px #037ebb;
+  border: solid 3px #037ebb;
   -webkit-box-shadow: 2px 2px 5px #000;
           box-shadow: 2px 2px 5px #000;
 }
@@ -131,7 +144,7 @@ div a .wsap {
 
 .articulo {
   background-color: #d82e2e;
-  border: solid 2px #037ebb;
+  border: solid 3px #037ebb;
   -webkit-box-shadow: 2px 2px 5px #000;
           box-shadow: 2px 2px 5px #000;
 }
@@ -156,7 +169,29 @@ div a .wsap {
 .subtitulos {
   color: #d82e2e;
   font-family: "Cormorant Garamond", serif;
-  font-size: 40px;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 760px) {
+  .footer {
+    width: 100%;
+    background-color: #d82e2e;
+    color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -ms-grid-columns: 1fr,1fr;
+        grid-template-columns: 1fr,1fr;
+    font-size: 10px;
+    margin-right: 5px;
+  }
 }
 
 body {
