@@ -2,25 +2,31 @@
   margin: 0;
   padding: 0;
 }
+
 /*encabezado index y todas las paginas*/
+
 .encabezado {
   width: 100%;
   background-color: $color_encabezado;
     
+  .logo {
+    width: 80px;
+    height: 80px;
+    margin-left: 12px;
+    margin-top: 8px;
+   border-radius: 20%;
+   
+
+     
+   }
+
   /*h1 Titulo*/
   .texto{
-    color: $color_texto;
+    color: $color_texto; 
   
   }
 
 }
-
-/*Logo todas las paginas */
-.logo {
-  border: solid 2px #037ebb;
-   border-radius: 20%;
-   
- }
 
  article {
   width: 100%;
@@ -39,13 +45,28 @@
     height: 600px;
     width: 80%;
   }
-  
-/*icono instagram footer de paginas*/
 
-  .icono {
-    height: 30px;
-    width: 30px;
+
+  
+ .carruseldos{
+   width: 300px;
+   height: 400px;
+ }
+
+  .footer{
+    background-color: $color_encabezado;
+
+    .texto{
+      color: $color_texto;
+    }
+      
+    svg{
+      color: $color_texto;
+    }
+    
+
   }
+
 
  /*boton whastsap*/
 
@@ -63,48 +84,21 @@
     position: sticky;
     top: 50px;
   }
-  /*texto de articulo MercurioShoes index*/
- .articulo {
-     background-color: $color_encabezado;
-  
 
-        .parrafo {
-            margin: 10px;
-            font-size: 16px;
-            color: $color_texto;
-            animation-duration: 3s;
-            animation-name: slidein;
-            overflow: hidden;
-        } 
-
-        .texto{
-          color: $color_texto;
-        }
-     }
-
-     /*footeer todas las paginas*/
-
-.footer{
-     width: 100%;
-    background-color: $color_encabezado;
+  .parrafo {
     color: $color_texto;
+    margin-left: 10px;
+    
+  }
 
-    .texto{
-      color: $color_texto;
-    }
-}     
-  
-/* parrafos paginas*/
+  .subtitulos {
+    color: $color_encabezado;
+    font-family: $tipo_defuente;
+    font-size: 30px;
+    margin-left: 10px;
+  }
+   
 
-.parrafo {
-  color: $color_texto;
-}
-
-
-
-/*Pagina de Productos*/
-
-/*h3*/ 
 
 .text {
   font-family: $tipo_defuente;
@@ -134,17 +128,11 @@
 
 @mixin border {
   border: solid 3px #037ebb;
-  box-shadow: 2px 2px 5px #000;
+  box-shadow: 10px 10px 10px #000;
   
   
 }
 
-.logo {
-  @include border ();
-   border-radius: 20%;
-   
- }
- 
 .card {
   @include border();
 
@@ -173,47 +161,3 @@
  
 }
 
-.articulo {
-  background-color: $color_encabezado;
-  @include border ();
-
-     .parrafo {
-       font-family: $tipo_defuente;
-         margin: 10px;
-         font-size: 16px;
-         color: $color_texto;
-         animation-duration: 3s;
-         animation-name: slidein;
-         overflow: hidden;
-     } 
-
-     .texto{
-       color: $color_texto;
-     }
-  }
-
-  /*Pagina Como Comprar*/
-
-  .subtitulos {
-    color: $color_encabezado;
-    font-family: $tipo_defuente;
-    font-size: 30px;
-  }
-
-@media screen and (max-width: 760px) {
- 
-  .footer{
-    width: 100%;
-    background-color: $color_encabezado;
-    color: $color_texto;
-    display: flex;
-    justify-content: start;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr,1fr;
-    font-size: 10px;
-    margin-right: 5px;
-  
-}  
-      
-}
