@@ -122,6 +122,28 @@ div a .wsap {
   font-size: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .productos {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -ms-grid-columns: 200ox, 200px, 200px;
+        grid-template-columns: 200ox, 200px, 200px;
+        grid-template-areas: "filas filas" "productos productos productos";
+    width: 185px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .productos .card {
+    width: 190px;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .filas {
     display: -ms-grid;

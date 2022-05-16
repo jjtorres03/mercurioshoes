@@ -99,7 +99,8 @@
   }
    
 
-
+   
+  
 .text {
   font-family: $tipo_defuente;
   text-align: center;
@@ -161,7 +162,28 @@
  
 }
 
+@media screen and (min-width: 768px){
+
+  .productos{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 200ox, 200px, 200px;
+    grid-template-areas: 
+    "filas filas"
+    "productos productos productos";
+    width: 185px;
+    display: flex;
+    justify-content: center;
+    
+
+    .card{
+      width: 190px;
+    }
+  }
+}
  
+
+
 
 @media screen and (max-width: 576px){
 
@@ -176,4 +198,3 @@
   }
 }
  
-
