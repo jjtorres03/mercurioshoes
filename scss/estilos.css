@@ -122,6 +122,19 @@ div a .wsap {
   font-size: 20px;
 }
 
+@media screen and (max-width: 576px) {
+  .filas {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr, 1fr;
+        grid-template-rows: 1fr, 1fr;
+    -ms-grid-columns: 1fr, 1fr;
+        grid-template-columns: 1fr, 1fr;
+        grid-template-areas: "filas filas" "productos productos";
+    margin-left: 5px;
+  }
+}
+
 body {
   font-family: "Cormorant Garamond", serif;
   background-color: #2d2d2d;

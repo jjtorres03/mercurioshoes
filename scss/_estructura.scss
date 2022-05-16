@@ -161,3 +161,19 @@
  
 }
 
+ 
+
+@media screen and (max-width: 576px){
+
+  .filas{
+    display: grid;
+    grid-template-rows: 1fr, 1fr;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-areas: 
+    "filas filas"
+    "productos productos";
+    margin-left: 5px;
+  }
+}
+ 
+
