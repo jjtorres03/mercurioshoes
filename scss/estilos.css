@@ -44,6 +44,7 @@ img {
   height: 400px;
 }
 
+/* footer de todas las paginas */
 .footer {
   background-color: #d82e2e;
 }
@@ -72,11 +73,13 @@ div a .wsap {
   top: 50px;
 }
 
+/* Paginas Como Comprar, Ayuda. contacto*/
 .parrafo {
   color: #ffffff;
   margin-left: 10px;
 }
 
+/* h3 de paginas Como Comprar, ayuda, contacto*/
 .subtitulos {
   color: #d82e2e;
   font-family: "Cormorant Garamond", serif;
@@ -122,6 +125,7 @@ div a .wsap {
   font-size: 20px;
 }
 
+/* Medias Querys Card*/
 @media screen and (min-width: 768px) {
   .productos {
     display: -ms-grid;

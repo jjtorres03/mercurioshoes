@@ -53,6 +53,9 @@
    height: 400px;
  }
 
+
+ /* footer de todas las paginas */
+
   .footer{
     background-color: $color_encabezado;
 
@@ -85,11 +88,14 @@
     top: 50px;
   }
 
+  /* Paginas Como Comprar, Ayuda. contacto*/
   .parrafo {
     color: $color_texto;
     margin-left: 10px;
     
   }
+
+  /* h3 de paginas Como Comprar, ayuda, contacto*/
 
   .subtitulos {
     color: $color_encabezado;
@@ -161,6 +167,7 @@
 
  
 }
+/* Medias Querys Card*/
 
 @media screen and (min-width: 768px){
 
